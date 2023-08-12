@@ -4,62 +4,482 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Feel the music!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Spotify Clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="Spotify.css">
+    <script src="spotify.js"></script>
 </head>
 
 <body>
-
     <div class="container">
-        <div class="top-panels">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="logo-panel">
-            <h1>Spotify</h1>
-            <img src="logo1.png" alt="">
-        </div>
-        <div class="menu-option">
-            <span></span>
-            <h4>Menu</h4>
-            <ul>
-                <li><a href=""><i class="fa-solid fa-house"></i> Home <i class="fa-solid fa-angle-right"></i></a></li>
-                <li><a href=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Search</a></li>
-                <li><a href=""><i class="fa-solid fa-copy"></i> Your Library</a></li>
-                <li><a href=""><i class="fa-solid fa-certificate"></i> Premium</a></li>
-                <li><a href=""><i class="fa-regular fa-bell"></i> Notifications <i class="fa-solid fa-circle"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-gear"></i></i></i> Settings</a></li>
-            </ul>
-            <span></span>
-        </div>
-        <div class="thumbnails-panel">
-            <img src="charlie.png" alt="">
-            <img src="shawn.png" alt="">
-            <img src="weekend.png" alt="">
-            <img src="enrique.png" alt="">
-        </div>
-        <div class="song-detail">
-            <h6>Hero</h6>
-            <h6>Enrique iglesias</h6>
-           
-        </div>
-        <div class="play-music">
-            <div class="timeline-div">
-                <div class="timeline"></div>
+        <!-- left nav -->
+        <div class="main">
+            <!-- Sidebar Starts -->
+            <div class="sidebar">
+                <div class="dot">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <div class="sidebar__categories">
+                    <div class="sidebar__category">
+                        <i class="material-icons">home</i>
+                        <span><a href="blank">Home</a></span>
+                    </div>
+                    <div class="sidebar__category">
+                        <i class="material-icons">search</i>
+                        <span><a href="blank">Search</a></span>
+                    </div>
+                    <div class="sidebar__category">
+                        <i class="material-icons">library_add</i>
+                        <span><a href="blank">Your Library</a></span>
+                    </div>
+                </div>
+                <br>
+                <div class="sidebar__categories">
+                    <div class="sidebar__category">
+                        <i class="material-icons">playlist_add_circle</i>
+                        <span><a href="blank">Create Playlist</a></span>
+                    </div>
+                    <div class="sidebar__category">
+                        <i class="material-icons">favorite</i>
+                        <span><a href="blank">Liked Songs</a></span>
+                    </div>
+                </div>
+                <hr />
             </div>
-            <div class="controls">
-                <i class="fa-solid fa-backward"></i>
-                <i class="fa-solid fa-circle-play"></i>
-                <i class="fa-solid fa-forward"></i>
-            </div>
-            <span></span>
         </div>
-        <div class="footer">
-            
+        <!-- left nav end -->
+        <div class="right-cont">
+            <div class="upper-nav">
+                <div class="uppernav_icon">
+                    <span class="material-symbols-outlined">arrow_circle_left</span>
+                    <span class="material-symbols-outlined">arrow_circle_right</span>
+                </div>
+                <div class="uppernav-det">
+                    <div class="uppernav-det-style">
+                        <a href="blank" class="upgrade">Upgrade</a>
+                    </div>
+                    <div class="uppernav-det-style">
+                        <div class="sidebar__user">
+                            <i class="material-icons">account_circle</i>
+                            <span><a href="blank">User</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="play-music">
+                <h1>Recently played</h1>
+            </div>
+            <div class="musics__container">
+                <!-- Single music starts -->
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/WbQvmYqxKwEbLPj5zSlYe5vrxipjJAaCxqB1cJxyzljnvIr9i4Ix9fyxK9h9BXq5a3jyvPdvGKI_2vWXnA=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/1-Ipiq-y8WyAcWn88nuxwTHaaBWMg8VkCBuP3puDCec-neD3v-7SqoBRzmmBKmA-lir_Ie70yw9EKHk=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Diamond Heart
+                            </h3>
+                            <a href="">Alan Walker-Different World</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single music Ends -->
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/z28naxSOavgfqd3vZBZ73l9kskcpdv9c3Pw-i9U6Xzh5I0ElOo96ESvYdmREiNsxKCnyv8CVxLbhR9Bu=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/1-Ipiq-y8WyAcWn88nuxwTHaaBWMg8VkCBuP3puDCec-neD3v-7SqoBRzmmBKmA-lir_Ie70yw9EKHk=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Ignite(feat. Seungri)
+                            </h3>
+                            <a href="">K-391</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/bEvxV3q3ofcGTRAdWV8D-_YSr5aUrrdS6o157kJW7NFpjRPO7c4-ckcqD2Dzpgh2oOIeQ7XyPVh92oMO=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/1-Ipiq-y8WyAcWn88nuxwTHaaBWMg8VkCBuP3puDCec-neD3v-7SqoBRzmmBKmA-lir_Ie70yw9EKHk=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                The Spectre
+                            </h3>
+                            <a href="">Alan Walker</a>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="play-music">
+                <h1>Quick Picks</h1>
+                <div class="play-music-more">
+                    <h3>More</h3>
+                    <span class="material-symbols-outlined">arrow_circle_left</span>
+                    <span class="material-symbols-outlined">arrow_circle_right</span>
+                </div>
+            </div>
+            <div class="musics__container">
+                <!-- Single music starts -->
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/Yq27hnGq8IsfHc9v-_k6p1x_d7vD4HYGK4WyJdLhZPPVtwSqrPh9qDBKDrMjxWAHZtWxDEeM9Vgqxtg=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/61_IqMk486plbpz9p1355xnPp3iezani_P3MuDj-5NIo6Syhyhjw8sCQ4yLSVQwS-WWe8CAifWutOrw=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Royalty
+                            </h3>
+                            <a href="">Egzod, Maestro Chives And Neoni</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single music Ends -->
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/dcxXIIlest09vnvKznWM9VWQXu1EL7lKxBzXGzwgmVjmMNBm1dEWT_0qn1xrEZYyKF_qRE1TLq8P_JY_mQ=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/U-SAmNOu4TynE818gLCfKsuHZ0U5YNEtO9mrjSI9WCCKERs98LzrCal5kajBBTQNwdcisoB2Bn-pHp4=w1500-h625-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Starboy(feat. Daft Punk)
+                            </h3>
+                            <a href="">The Weekend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/WbQvmYqxKwEbLPj5zSlYe5vrxipjJAaCxqB1cJxyzljnvIr9i4Ix9fyxK9h9BXq5a3jyvPdvGKI_2vWXnA=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/1-Ipiq-y8WyAcWn88nuxwTHaaBWMg8VkCBuP3puDCec-neD3v-7SqoBRzmmBKmA-lir_Ie70yw9EKHk=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Diamond Heart
+                            </h3>
+                            <a href="">Alan Walker-Different World</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/aEMVx7DA7l_o29CAq06aOcVPxQayP0CU2NACxMey8AKohD-H0lbPGp2I_ECgk9P9Cadcn1_zMNAkJb08=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/kOnbLCgFkoLAWoRnsaGZqqJoG-AZSz1OC1sNlHVonk6YJafMes39jMZsXnE0BI1OqvHnalhnPSQl7zm0=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                Mitti De Tibbe
+                            </h3>
+                            <a href="">Kaka</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/rwoPrSpIkckdp1oDBOrKIlyd2tCWuGMHQmXDwusT68X6ZjApWOgSOeC5CGWRZWmDLBTdVi9PqBurHeIQ=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/a-/AD_cMMTWRRC98-gnhPZQpVPH1K3eySkKbjeoCI8eu7jF4LSfiSc=w1920-h800-l90-rj-dcnSWY7JkJ"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                295
+                            </h3>
+                            <a href="">Sidhu Moose Wala</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/G2ryS0OQ-BJ4g94A315NXGxX3jGU0rph_zeqjBbKGkvMYQ56uLDsWHYZpLwmJmdUPZPxCE56Dw5w1fdjkA=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/V_w7m2kuoVshpqcS1-RlEl-aONMQcGjP84WSo1tJS5IU8IDCr0v0s0NBMMGrLXtlL4CNjUKEdXcN3gAy=w1400-h583-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>
+                                No Love(Remix)
+                            </h3>
+                            <a href="">Single-Shubh</a>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="play-music">
+                <div>
+                    <p>MUSIC THAT's HOT AND HAPPENING.</p>
+                    <h1>India's Biggest Hits</h1>
+                </div>
+                <div class="play-music-more">
+                    <h3>More</h3>
+                    <span class="material-symbols-outlined">arrow_circle_left</span>
+                    <span class="material-symbols-outlined">arrow_circle_right</span>
+                </div>
+            </div>
+            <div class="musics__container">
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/hHhmLUpfNZIIgbQrVx_11-xad1ZK_Gsx-xyHN8bdEJXD9-_3krcUcghp3FXna2pUSkihj6uZLKvz99Q=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/a-/AD_cMMS2PsAOskgvprZLuu1laL4N7IA9wmuw68ZuNa4retBOF_jl=w718-h299-l90-rj-dcrSSWjxkK"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Thoda Thoda Pyaar
+                            </h3>
+                            <a href="">Steben Ben & Nilesh Ahuja </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/aS-dAX83dZ6jsyIVV8ZWyN7Fd1cQzvH940bACS1EpFjsc9Uqs9cBFOnaY8LLGSzZk8SvXFe1OOJxrx8=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/F6FwNXJ1d69xoZHWOILaycynjo4ZE2puUXxEclaUDHwfjKcJrHp7B1bqb-6zKJIAMPKuAL-c-AY7xgg2=w1400-h583-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Humnava Mere(feat. Jubin Nautiyal)
+                            </h3>
+                            <a href="">Rocky-Shiv </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/JFOH8kF-mXwFHZc-wPTqnX3aM2bRtpGMpOr2VByhQim4PrsIawLcHi-SYuBKjZy4a2Ef_nGTAlgDJw4T=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/ccpX_lN434wiURjqfpIK6D32mi6v1r6uqFbsDEklFSrBHBHmVflt0k-JhPA2_lRqQZZHo9AhDScVyQI=w1200-h500-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Kaun Tujhe
+                            </h3>
+                            <a href="">Palak Munchhal & Amaal Malik </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/qLA16KPCJwHBKIYakBlEfy7oGRSL5Oxvkxp8zNjoNy-Imk-3mI963NJ6eFZH88pVYWnjEvL0E-rb4Tg=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/ZksW8_EkjShyDT_9OMxSw-yMRMG3FNDU6DPI0YtGowyfD5aSlWd63qbm3q4guIqVcGQ6cgFylRQ1EQ=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Chala Aana
+                            </h3>
+                            <a href="">Armaan Malik </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/330Zh9w_UmbOlonf53fZfc08e9FEAKIi1Z1XcKnwUCGYTM9GSkl-Mjv6kgV-huBfsKMDwPirnta4z4_q=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/PyB7GYS7jITMwOw65XyCHG_8Ym1V1jYBL9l4PvzF-UBTq7sqlPnWnl1xUgU8qKd_ap2KFqOk2A5eCpU=w1032-h430-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Hawa Banke
+                            </h3>
+                            <a href="">Darshan Rawal</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/YtztFw00PBLnQyFXKyIL4jX8AopGPKd5Fv4itKPbyR0pat8ManqOYoCMpw0ddR68AZJAMpSBE2BRDo8=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/W_yOqnKSDYyeVOY_AsXhuAtb6rW3vCL3GtJ9DA1GxWOrJfyeSOqzvTv_TkFHijdkVPXWutASBlRFPg=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Thodi Jagah
+                            </h3>
+                            <a href="">Arjiit Singh </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/pyTNDS-zWSVZM29J-fOYj6VqXspDBU5I6TfSczVbyzT26PFbzpEK4VUpNAerxsqKM956AtVQaWQPWxJ_=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/PyB7GYS7jITMwOw65XyCHG_8Ym1V1jYBL9l4PvzF-UBTq7sqlPnWnl1xUgU8qKd_ap2KFqOk2A5eCpU=w1032-h430-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Is Qadar
+                            </h3>
+                            <a href="">Tulsi Kumar, Darsan Raval </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music__thumbnail">
+                        <img src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj"
+                            alt="" />
+                    </div>
+                    <div class="music__details">
+                        <div class="author">
+                            <img src="https://lh3.googleusercontent.com/W_yOqnKSDYyeVOY_AsXhuAtb6rW3vCL3GtJ9DA1GxWOrJfyeSOqzvTv_TkFHijdkVPXWutASBlRFPg=w1920-h800-p-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="title">
+                            <h3>Khairiyat
+                            </h3>
+                            <a href="">Ariijit Singh </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="explore">
+                <h1>Explore</h1>
+                <div class="explore__categories">
+                    <div class="explore__category">
+                        <span class="material-symbols-outlined">new_releases</span>
+                        <span><a href="blank">New Releases</a></span>
+                    </div>
+                    <div class="explore__category">
+                        <span class="material-symbols-outlined">
+                            monitoring
+                        </span>
+                        <span><a href="blank">Charts</a></span>
+                    </div>
+                    <div class="explore__category">
+                        <span class="material-symbols-outlined">
+                            genres
+                        </span>
+                        <span><a href="blank">Moods and Genres</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="play-music-bar-parent">
+            <div class="play-music-bar">
+                <div class="left-content">
+                    <div class="played-music-thumbnail">
+                        <div class="played-image"><img
+                                src="https://lh3.googleusercontent.com/gyw6VH1uRAGq01PIpjnv5c-UFgJV08xE5x4Fd061iJ0CfOcuZacKO7Ap1uyoX9ID_MMBkeEVFKmpK1U=w544-h544-l90-rj"
+                                alt="" />
+                        </div>
+                        <div class="played-title">
+                            <h3>Khairiyat
+                            </h3>
+                            <a href="">Ariijit Singh </a>
+                        </div>
+                    </div>
+                    <div class="like-current-music">
+                        <i class="material-icons">favorite</i>
+                    </div>
+                </div>
+                <div class="centre-content">
+                    <div class="centre-content-up">
+                        <span class="material-symbols-outlined">
+                            shuffle
+                        </span>
+                        <span class="material-symbols-outlined">
+                            skip_previous
+                        </span>
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                        <span class="material-symbols-outlined">
+                            skip_next
+                        </span>
+                        <span class="material-symbols-outlined">
+                            replay
+                        </span>
+                    </div>
+                    <div class="centre-content-down">
+                        <span id="current-time" class="time">0:00</span>
+                        <input type="range" id="seek-slider" max="100" value="26">
+                        <span id="duration" class="time">3:29</span>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <span class="material-symbols-outlined">
+                        lyrics
+                    </span>
+                    <span class="material-symbols-outlined">
+                        queue_music
+                    </span>
+                    <span class="material-symbols-outlined">
+                        tap_and_play
+                    </span>
+                    <span class="material-symbols-outlined">
+                        volume_up
+                    </span>
+                    <input type="range" id="volume-slider" max="100" value="75">
+                </div>
+            </div>
         </div>
     </div>
 
